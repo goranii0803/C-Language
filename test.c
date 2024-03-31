@@ -18,4 +18,3 @@ int main(){
         printf("\n");
     }
 }
-//star
