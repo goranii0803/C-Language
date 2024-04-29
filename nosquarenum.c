@@ -1,3 +1,4 @@
+//백준 1016번 제곱 ㄴㄴ수
 #include <stdio.h>
 int main () {
     int a,b,i,j=0,cout=0;
@@ -14,4 +15,3 @@ int main () {
     printf("%d",cout);
 }
 //실행 안됨
-//2024.4.29 실행 안됨
