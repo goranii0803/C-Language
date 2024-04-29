@@ -1,1 +1,1 @@
-C language pracice
+C language practice
