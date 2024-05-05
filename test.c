@@ -1,3 +1,4 @@
+// #1882
 #include<stdio.h>
 int main(){
     int n,i;
