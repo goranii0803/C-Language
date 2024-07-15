@@ -1,24 +1,11 @@
-// #1883
 #include <stdio.h>
 int main () {
-    int a,i;
-    scanf("%d", &a);
-    for(i=1;i<=a;i++){
-        for(int j=0;j<a-i;j++){
-            printf(" ");
-        }
-        for(int k=1;k<=i;k++){
-            printf("*");
-        }
-        printf("\n");
+    int fibo[100] = {0,1,}, i, cnt;
+    scanf("%d",&cnt);
+    for(i=2;i<=cnt;i++) {
+        fibo[i] = fibo[i-1] + fibo[i-2];
     }
-    for(i=1;i<a;i++){
-        for(int j=0;j<i;j++){
-            printf(" ");
-        }
-        for(int k=0;k<a-i;k++){
-            printf("*");
-        }
-        printf("\n");
+    for(i=0;i<=cnt;i++) {
+        printf("%d",fibo[i]);
     }
 }
