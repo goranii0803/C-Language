@@ -1,11 +1,17 @@
 #include <stdio.h>
-int main () {
-    int fibo[100] = {0,1,}, i, cnt;
-    scanf("%d",&cnt);
-    for(i=2;i<=cnt;i++) {
-        fibo[i] = fibo[i-1] + fibo[i-2];
+int main() {
+    int jumsu[2][3]={0},i,j;
+    printf("input\n");
+    for(i=0;i<2;i++) {
+        for (j=0;j<3;j++) {
+            scanf("%d", &jumsu[i][j]);
+        } 
     }
-    for(i=0;i<=cnt;i++) {
-        printf("%d",fibo[i]);
+    printf("2차원 배열 출력\n");
+    for(i=0;i<2;i++){
+        for(j=0;j<3;j++){
+            printf("%d",jumsu[i][j]);
+        }
+        printf("\n");
     }
 }
